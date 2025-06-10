@@ -1,0 +1,42 @@
+{
+    "name": "guestcms/dev-tool",
+    "description": "Dev tool commands for Guestcms CMS",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "guestcms",
+        "guestcms cms",
+        "guestcms platform",
+        "guestcms dev tools"
+    ],
+    "homepage": "https://guestcms.com",
+    "authors": [
+        {
+            "name": "Coastal Media Brand",
+            "email": "info@coastalmediabrand.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Guestcms\\DevTool\\": "src"
+        }
+    },
+    "require": {
+        "laravel/framework": "^10.31|^11.0|^12.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.5.0",
+        "phpunit/phpunit": "^9.0|^10.0|^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Guestcms\\DevTool\\Providers\\DevToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "guestcms/{-name}",
+    "description": "{Name} package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Guestcms\\{Name}\\": "src"
+        }
+    },
+    "require": {
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Guestcms\\{Name}\\Providers\\{Name}ServiceProvider"
+            ]
+        }
+    }
+}
